@@ -5,7 +5,7 @@ $queryCnt="select count(*) from tQueueTasks
                               where StartDT is null
                               and Category='$type'";
 
-$queryQuestion = "select Question,ID,Path2File,CorrectVariant
+$queryQuestion = "select distinct Question,ID,Path2File,CorrectVariant
   from tQuestion a right join (select ID
                                 ,Path2File
                                 ,Category
