@@ -13,6 +13,7 @@
 <div id="header">
 
 <?php
+phpinfo();
 /*$type = $_REQUEST['type'];
 error_reporting(E_ALL);
 $queryCnt="select count(*) from tQueueTasks
@@ -37,13 +38,16 @@ $conn = pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
 
 if (!$conn) {
     echo "Произошла ошибка.\n";
-    exit;
-}
 
+}
+else{
+    echo "OK";
+}
+/*
 if (!pg_ping($conn))
     die("Соединение нарушено\n");
 
-die($data);
+die($data);*/
 ?>
 </div>
 <div id="home">
@@ -63,5 +67,3 @@ die($data);
 
 </body>
 </html>
-
-
