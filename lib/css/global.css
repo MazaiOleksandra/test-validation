@@ -1,0 +1,104 @@
+/* ALIGNMENT */
+.centered {text-align: center}
+.left_aligned {text-align: left;}
+.right_aligned {text-align: right;}
+
+/* TEXT FACE & SIZE */
+.tahoma7 {font-size: 7pt; font-family: Tahoma;}
+.tahoma8 {font-size: 8pt; font-family: Tahoma;}
+.tahoma10 {font-size: 10pt; font-family: Tahoma;}
+.tahoma12 {font-size: 12pt; font-family: Tahoma;}
+.txtmono {font-family: monospace; }
+.txtnobold {font-weight: normal; }
+.txtbold {font-weight: bold;}
+
+/* MARGINS */
+.mar0 {margin: 0px; } 
+.mar5 {margin: 5px; }
+.mar10 {margin: 10px; }
+.mar15 {margin: 15px; }
+.mar20 {margin: 20px; }
+
+/* PADDINGS */
+.pad0 {padding: 0px; }
+.pad2 {padding: 0px; }
+.pad3 {padding: 3px; }
+.pad5 {padding: 5px; }
+.pad7 {padding: 7px; }
+.pad10 {padding: 10px; }
+
+/* BORDERS */
+.bor1 {border: 1px solid #000;}
+.bor1gr {border: 1px solid #999; }
+.bor1lgr {border: 1px solid #ddd; }
+.bor1dot {border: 1px dotted #000; }
+.bor1dotgr {border: 1px dotted #999; }
+.bor1grdot {border: 1px dotted #999; }
+
+.outset {border: 2px outset #000; }
+
+/* POSITION */
+.absolute {position: absolute;}
+.relative {position: relative;}
+.fixed {position: fixed;}
+
+/* DISPLAY */
+.block {display: block; }
+.inline_block {display: inline-block; }
+.invisible {display: none; }
+.hidden {display: none; }
+
+/* HEADERS */
+.page_header {margin-top: 15px; margin-bottom: 5px; font-size: 14pt; font-weight: bold; border: 1px solid #000; }
+.caption_header {background-color: #009; color: #fff;}
+.head1 {font-size: 16pt; font-family: Tahoma; font-weight: bold; }
+.h1 {font-size: 16pt; font-family: Tahoma; font-weight: bold; }
+.h2 {font-size: 14pt; font-family: Tahoma; font-weight: bold; }
+
+/* COLORS */
+.cl_gray {color: #999;}
+.cl_black {color: black;}       
+.cl_blue {color: blue;}
+.cl_red {color: red;}
+
+/* LINKS */
+.linknorm {color: blue; text-decoration: none;}
+.linknorm:hover {text-decoration: underline;}
+
+.linktab {background-color: #fff; color: #00d; text-decoration: none; display: inline-block; padding: 5px; border: 1px solid #999; cursor: pointer}
+.linktab_sel {background-color: #00f; color: #fff; text-decoration: none; display: inline-block; padding: 5px; cursor: pointer}
+.linktab:hover {background-color: #ccd; color: #000; cursor: pointer}
+.linktab_sel:hover {background-color: #00f; color: #fff; cursor: pointer }
+
+/* SIZES */
+.width100 {width: 100%}
+.height100 {height: 100%;}
+
+.width100px {width: 100px}
+.width150px {width: 150px}
+.width200px {width: 200px}
+.width250px {width: 250px}
+.width300px {width: 300px}
+.width350px {width: 350px}
+.width400px {width: 400px}
+.width500px {width: 500px}
+.width600px {width: 600px}
+.width700px {width: 700px}
+.width800px {width: 800px}
+
+/* BACKGROUND */
+.back_white {background-color: #ffffff;}
+.back_win {background-color: #eeeeee;}
+.back_lightgray {background-color: #ddd;}
+.back_tooltip {background-color: #ffffdd}
+
+/* TABLES */
+.show_empty_cells {empty-cells: show;}
+.show_empty {empty-cells: show;}
+
+/* EFFECTS */
+.shadow {-moz-box-shadow: 3px 3px 3px 3px #000; -webkit-box-shadow: 3px 3px 3px 3px #000}
+.round_border {border-radius: 5px; }
+.top_round_border {border-radius: 5px 5px 0px 0px; }
+
+

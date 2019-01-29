@@ -1,0 +1,79 @@
+/* DIV container around table to constrict the height for IE (IE ignores the tbody height style) */
+.FixedTableHead {
+        overflow-y:auto;
+        
+        /* this fixes IE so container width is same as table width */
+        width: expression( (this.childNodes[0].clientWidth) + 'px' );
+        
+        /* This fixes IE so the container height is table height plus the height of the header */
+        height: expression( (parseInt(this.childNodes[0].style.height) + this.childNodes[0].childNodes[1].offsetTop + 1) +'px' );
+}
+
+/* Scrollable Content */
+.FixedTableHead table tbody {
+        height:200px;
+        overflow-x:hidden;
+        overflow-y:auto;
+}
+
+.FixedTableHead table tbody tr {
+        height: auto;
+        white-space: nowrap;
+}
+
+/* Prevent Mozilla scrollbar from hiding right-most cell content */
+.FixedTableHead table tbody tr td:last-child {
+        padding-right: 50px;
+}
+
+/* Fixed Header */
+/* In WinIE any element with a position property set to relative and is a child of       */
+/* an element that has an overflow property set, the relative value translates into fixed.    */
+/* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+.FixedTableHead table thead tr {
+        position: relative;
+        height: auto;
+        /* this fixes IE header jumping bug when mousing over rows in the tbody */
+        top: expression( this.parentNode.parentNode.parentNode.scrollTop+'px' );
+}
+
+/* Fixed Header */
+.FixedTableHead table thead tr td {
+        border-bottom:1px solid #000000;
+        background-color:white;
+}
+.hovergallery img{
+width:80px;
+-webkit-transform:scale(0.9); /*Webkit: Scale down image to 0.8x original size*/
+-moz-transform:scale(0.9); /*Mozilla scale version*/
+-o-transform:scale(0.9); /*Opera scale version*/
+-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+-o-transition-duration: 0.5s; /*Opera duration version*/
+opacity: 1; /*initial opacity of images*/
+margin: 0 0px 0px 0; /*margin between images*/
+/*z-index: 1;*/ 
+}
+
+.hovergallery img:hover{
+-webkit-transform:scale(2); /*Webkit: Scale up image to 1.2x original size*/
+-moz-transform:scale(2); /*Mozilla scale version*/
+-o-transform:scale(2); /*Opera scale version*/
+box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+opacity: 1;
+z-index: 2; 
+}
+/*---------------------------------------------------*/
+		.Container { align:left; margin-left: 25%; margin-right: 25%;  overflow: scroll;  height: 200px; width:595px;}/*overflow-x: hidden;*/
+        .Container_head { margin-left: 25%; margin-right: 25%; height: 25px; width:595px;}
+        .BigTable { width: 578px; table-layout: fixed;}/*578*/
+		.BigTable td { width: 128px;}
+		.BigTable td + td { width: 128px;}
+		.BigTable td + td + td { width: 115px;}
+        .BigTable td + td + td + td { width: 135px;}
+		.Header { margin-left: 25%; margin-right: 20%; height: 70px;}
+		.Header .Heading { width: 40%; float: left; height: 30px; }
+		.Header .Heading + .Heading  { width: 30%; }
+		.Header .Heading + .Heading + .Heading { width: 30%; }

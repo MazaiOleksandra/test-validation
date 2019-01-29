@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('/lib/fonts/ubuntu/ubuntu-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('/lib/fonts/ubuntu/ubuntu-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

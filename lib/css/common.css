@@ -1,0 +1,107 @@
+.txtnorm {font-size: 8pt; font-family: Tahoma;}
+.txtmed {font-size: 10pt; font-family: Tahoma;}
+.txtbig {font-size: 12pt; font-family: Tahoma;}
+.txtmono {font-size: 10pt; font-family: Courier;}
+.txtmonobig {font-size: 12pt; font-family: monospace;}
+.txtsmall {font-size: 7pt; font-family: Tahoma;}
+.border1 {border: 1px solid #000}
+.border1gr {border: 1px solid #999;}
+.border1lgr {border: 1px solid #ddd;}
+.linknorm {color: blue; text-decoration: none;}
+.linknorm:hover {text-decoration: underline;}
+.nopad {padding: 0px;}
+.padding0 {padding: 0px;}
+.padmin {padding: 2px;}
+.padnorm {padding: 5px;}
+.padbig {padding: 10px;}
+.invisible {display: none;}
+.width100 {width: 100%}
+.height100 {height: 100%;}
+.centered {text-align: center}
+.noborder {border: 1px solid transparent}
+.collapse_border {border-collapse: collapse; }
+.txtbold {font-weight: bold;}
+.margin10 {margin: 10px;}
+.margin5 {margin: 5px;}
+.head1 {font-size: 16pt; font-family: Tahoma; font-weight: bold; }
+.block {display: block;}
+.show_empty_cells {empty-cells: show;}
+.switch_img {border: 1px dotted #000}
+.switched_img {border: 1px dotted #f00; background-color: #ffffff;}
+.switch_img:hover {border: 1px solid #900; background-color: white}
+.switched_img:hover {border: 1px dotted #f00; background-color: white}
+.whiteback {background-color: #ffffff;}
+.winback {background-color: #eeeeee;}
+.left_align {text-align: left;}
+.right_align {text-align: right;}
+.txtblue {color: blue;}
+.page_header {margin-top: 15px; margin-bottom: 5px; font-size: 14pt; font-weight: bold; border: 1px solid #000; }
+.linktab {background-color: #fff; color: #00d; text-decoration: none; display: inline-block; padding: 5px; border: 1px solid #999; cursor: pointer}
+.linktab_sel {background-color: #00f; color: #fff; text-decoration: none; display: inline-block; padding: 5px; cursor: pointer}
+.linktab:hover {background-color: #ccd; color: #000; cursor: pointer}
+.linktab_sel:hover {background-color: #00f; color: #fff; cursor: pointer }
+.h1 {font-size: 16pt; font-family: Tahoma; font-weight: bold; }
+.h2 {font-size: 14pt; font-family: Tahoma; font-weight: bold; }
+.inline_block {display: inline-block;}
+.fixed {position: fixed;}
+.absolute {position: absolute; }
+.h3 {font-size: 12pt; font-weight: bold; margin-bottom: 10px; margin-left: 5px; margin-top: 3px;}
+.h4 {font-size: 12pt; font-weight: bold; margin-bottom: 10px; }
+.outset {border: 2px outset #000; }
+.winborder {border: 2px outset #ddd;}
+.caption_header {background-color: #009; color: #fff; padding: 3px;}
+.gray {color: #777;}
+.lightgray {color: #aaa;}
+.lightgrayback {background-color: #ddd;}
+.width100px {width: 100px}
+.width150px {width: 150px}
+.width200px {width: 200px}
+.width250px {width: 250px}
+.width300px {width: 300px}
+.width350px {width: 350px}
+.width400px {width: 400px}
+.width500px {width: 500px}
+.width600px {width: 600px}
+.width700px {width: 700px}
+.width800px {width: 800px}
+.tooltipback {background-color: #ffffdd}
+.darkblue {color: #009}
+.darkgreen {color: #494}
+.text_ge {background-color: #ffcc44}
+.text_ru {background-color: #ccff44}
+.shadow {-moz-box-shadow: 3px 3px 3px 3px #000; -webkit-box-shadow: 3px 3px 3px 3px #000; box-shadow: 2px 2px 3px 1px #999999;}
+.min_shadow {-moz-box-shadow: 1px 1px 1px 1px #999; -webkit-box-shadow: 1px 1px 1px 1px #999}
+.show_empty {empty-cells: show;}
+.txtgreen {color: #009900;}
+.nobold {font-weight: normal}
+.txtnobold {font-weight: normal}
+.round_border {border-radius: 5px; }
+
+                .cool-table {
+                    border: 1px solid #999; 
+                    border-radius: 5px;
+                }
+                
+                .cool-table th {
+                    background-color: #ddd; 
+                    border-radius: 3px;
+                    font-size: 10pt; 
+                    font-family: Tahoma;
+                    padding: 5px;
+                }
+                
+                .cool-table td {
+                    background-color: #fff;
+                    border-radius: 3px;
+                    font-size: 10pt;
+                    font-family: Tahoma;
+                    padding: 5px;
+                }
+.mini-shadow {box-shadow: 1px 1px 1px 1px #000;}
+.grayhtml {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAIAAACQKrqGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpifPbsGQ8PDwMDw5cvX4AkHjYLEBNUBGEzMRANWIDKiXQAKaaOunWg3QoQYAAwRWAAHitEaQAAAABJRU5ErkJggg==") repeat scroll 0 0 #EAEAEA }
+.underline {text-decoration: underline;}
+.whitetranspback {background-color: rgba(255,255,255,0.3);}
+.grayhtml {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAIAAACQKrqGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpifPbsGQ8PDwMDw5cvX4AkHjYLEBNUBGEzMRANWIDKiXQAKaaOunWg3QoQYAAwRWAAHitEaQAAAABJRU5ErkJggg==") repeat scroll 0 0 #EAEAEA }
+.underline {text-decoration: underline;}
+.nounderline {text-decoration: none;}
+.v_center {vertical-align: center; }

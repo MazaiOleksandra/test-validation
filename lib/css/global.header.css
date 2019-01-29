@@ -1,0 +1,120 @@
+body {
+    font-family: 'ubunturegular' !important;
+    font-weight: normal;
+}
+
+.tophdimg {
+    opacity: 0.7;
+}
+
+.tophdimg:hover {
+    opacity: 1;
+}
+
+.small_table {
+    table-layout: fixed;
+    width: 380px;
+}
+
+.table-bordered th, .table-bordered td {
+    text-align: center;
+}
+
+.popover {
+    /*width: 400px;*/
+    z-index: 100000;
+    max-width: 400px;
+}
+
+.navbar-inner {
+    background: #228B22 !important; /*#32CD32*/
+    min-height: 48px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    color: #000;
+    /*text-decoration: none;*/
+    background-color: #32CD32 !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar .nav > li > a:hover {
+    background: transparent !important;
+}
+
+.navbar .nav {
+    position: relative !important;
+    left: 0 !important;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0 !important;
+}
+
+.navbar .nav.pull-right {
+    float: right !important;
+    margin-right: 0 !important;
+}
+
+.navbar-inner:before, .navbar-inner:after {
+    display: table !important;
+    content: "" !important;
+}
+
+.nav > li > a {
+    line-height: 2;
+}
+
+.nav > li {
+    float: left;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 10px 15px 10px;
+    color: #BBFF99;
+    text-decoration: none;
+}
+
+.navbar .nav > li {
+    line-height: 2;
+    font-weight: normal !important;
+    font-family: 'ubuntubold' !important;
+    font-size: 14px;
+}
+
+.navbar .brand {
+    display: block;
+    float: left;
+    padding: 13px 20px 10px 20px;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.navbar-static-top {
+    position: static;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+    color: #333333;
+    /*background-color: #ffffff;*/
+}
+
+a.link-logout:hover {
+    text-shadow: -1px -1px 0 hsl(82, 62%, 20%),
+    -2px -2px 1px hsl(195, 4%, 22%);
+}

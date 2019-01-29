@@ -1,0 +1,212 @@
+.grayhtml {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAIAAACQKrqGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpifPbsGQ8PDwMDw5cvX4AkHjYLEBNUBGEzMRANWIDKiXQAKaaOunWg3QoQYAAwRWAAHitEaQAAAABJRU5ErkJggg==") repeat scroll 0 0 #EAEAEA;
+}
+
+.control_panel {
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    margin: 10px 0;
+    background: #ffffff;
+    margin-right: 10px;
+    /*margin-left: 20px;*/
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 3px solid #8AC264;
+    padding-bottom: 15px;
+}
+
+/*----------------------------------------*/
+
+.panel_table table {
+    border-collapse: collapse;
+    margin-bottom: 3em;
+    width: 100%;
+    background: #fff;
+
+    /*border-collapse: separate;*/
+    /*border: solid #7c8d87 1px;*/
+    border-spacing: 0;
+}
+
+.panel_table td, th {
+    /*padding: 0.75em 1.5em;*/
+    padding: 7px 7px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.panel_table th {
+    background-color: #8AC264; /*337ab7*/
+    font-weight: bold;
+    color: #3b3a3a;
+    white-space: nowrap;
+}
+
+.panel_table:not(.nrm_table) td {
+    /*padding: 5px !important;*/
+    padding: 5px 7px 0px 5px !important;
+}
+
+.panel_table tbody th {
+    /*background-color: #20af20;*/
+}
+
+/*.panel_table tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}*/
+
+.panel_table td, th {
+    border: none;
+}
+
+.panel_table th.no_border, tr.no_border {
+    border-left: none !important;
+}
+
+.panel_table th {
+    border-top: none;
+}
+
+.panel_table td, tr {
+    border-left: none;
+    padding-top: 15px;
+}
+
+.nrm_table:not(#stop_factors_table) {
+    border-collapse: collapse;
+    /*margin-bottom: 3em;*/
+    background: #fff;
+    font-size: 10pt;
+    border: solid #7c8d87 1px;
+    border-spacing: 0;
+    /*table-layout: fixed;*/
+    width: 100%;
+    /*word-wrap: break-word;*/
+    white-space: normal;
+}
+
+.nrm_table:not(#stop_factors_table) td.comm {
+    width: 350px;
+}
+
+.nrm_table td, .nrm_table th {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 5px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.nrm_table th {
+    background-color: #8AC264;
+    font-weight: bold;
+    /*color: #fff;*/
+    /*white-space: nowrap;*/
+    text-align: center;
+    font-size: 11px;
+    color: #3b3a3a;
+}
+
+.nrm_table tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+
+.nrm_table td {
+    /*background: white;*/
+    text-align: left;
+    border-left: solid #a7bdb5 1px;
+    border-top: solid #a7bdb5 1px;
+}
+
+.nrm_table th {
+    border: solid 1px #125912; /*todo Границы заголовка таблицы*/
+    border-collapse: collapse;
+    /*color: black;*/
+}
+
+.nrm_table td:not(.function), th {
+    color: #3b3a3a;
+}
+
+.nrm_table th {
+    /*font-size: 11px;*/
+}
+.nrm_table td {
+    font-size: 11px;
+}
+
+.nrm_table th.no_border, tr.no_border {
+    /*border-left: none !important;*/
+}
+
+.nrm_table th {
+    border-top: solid 1px #125912;
+}
+
+.nrm_table td:first-child, tr:first-child {
+    border-left: none;
+}
+
+input[type], button {
+    padding-left: 7px;
+    margin: 2px;
+}
+
+a {
+    color: #228B22;
+}
+
+a:hover {
+    color: #196319;
+}
+
+.nav li {
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 0px;
+    border: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.38);
+}
+
+.caption {
+    text-align: left;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-top: 10px;
+    /*margin-bottom: 5px;*/
+    color: #676767;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #6e6e6e;
+    cursor: pointer;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    background: #dcdcdc;
+    cursor: pointer;
+}
+
+.tablesorter {
+    position: relative;
+}
+
+.function {
+    color: green;
+}
+
+.blockOverlay {
+    background-color: rgba(0, 0, 0, 0.81);
+}
+
+.blockUI {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15pt;
+}

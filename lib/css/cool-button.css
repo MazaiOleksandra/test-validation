@@ -1,0 +1,24 @@
+.cool-button {
+    border-radius: 5px; 
+    background-image: -moz-linear-gradient(top center, #ffffff, #bbbbbb);
+    background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0.05, #ffffff), color-stop(0.70, #bbbbbb));
+    border: 1px solid #777;
+    padding: 5px 15px;
+    font-size: 10pt; 
+    font-family: Tahoma;
+    cursor: pointer;
+}
+.cool-button:hover {
+    border-radius: 5px; 
+    background-image: -moz-linear-gradient(top center, #ffffff, #cccccc);
+    background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0.05, #ffffff), color-stop(0.70, #cccccc));
+    border: 1px solid #777;
+    padding: 5px 15px;
+    font-size: 10pt; 
+    font-family: Tahoma;
+    cursor: pointer;
+}
+.cool-button-pressed {
+    background-image: -moz-linear-gradient(top center, #bbbbbb, #ffffff);
+    background-image: -webkit-gradient(linear, center bottom, center top, color-stop(0.05, #ffffff), color-stop(0.70, #bbbbbb));
+}
