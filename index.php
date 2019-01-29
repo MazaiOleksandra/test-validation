@@ -13,7 +13,6 @@
 <div id="header">
 
 <?php
-phpinfo();
 /*$type = $_REQUEST['type'];
 error_reporting(E_ALL);
 $queryCnt="select count(*) from tQueueTasks
@@ -31,23 +30,23 @@ $queryQuestion = "select Question,ID,Path2File,CorrectVariant
                               LIMIT 1
     ) b on a.Category=b.Category";
 $queryUpdate="update ";*/
-
+$queryQuestion ="
+CREATE TABLE tQuestion (
+  Category VARCHAR(20)
+  ,Question VARCHAR(200)
+  ,Variant VARCHAR(2)
+  ,CorrectVariant  CHAR(1)
+)
+";
 $conn = pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
  dbname=d4veaugad1osfk user=wklzxhhlnzvaqs password=8486dd5267e33b69124f5e83d9773d5d6e56a3455a5011036a0238d2f3f3c11a");
+$result = pg_fetch_all(pg_query($conn, $queryQuestion));
+pg_close($conn);
 
+echo $result;
 
-if (!$conn) {
-    echo "Произошла ошибка.\n";
-
-}
-else{
-    echo "OK";
-}
-/*
-if (!pg_ping($conn))
-    die("Соединение нарушено\n");
-
-die($data);*/
+$data = json_encode($data);
+die($data);
 ?>
 </div>
 <div id="home">
@@ -67,3 +66,5 @@ die($data);*/
 
 </body>
 </html>
+
+
