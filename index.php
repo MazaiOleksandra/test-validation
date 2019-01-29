@@ -44,11 +44,11 @@ INSERT INTO tquestion (category, question, variant, correctvariant) VALUES ('DOC
 $conn = pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
  dbname=d4veaugad1osfk user=wklzxhhlnzvaqs password=8486dd5267e33b69124f5e83d9773d5d6e56a3455a5011036a0238d2f3f3c11a");
 $result = pg_fetch_all(pg_query($conn, $queryInsert));
-$result2 = pg_fetch_all(pg_query($conn, 'select * from tqueuetasks'));
+$result2 = pg_fetch_all(pg_query($conn, 'select * from tquestion'));
 pg_close($conn);
 
 echo $result;
-var_dump( $result2);
+var_dump( json_encode($result2));
 
 $data = json_encode($data);
 die($data);
