@@ -106,7 +106,7 @@ function startValidation(type) {
                         question=data[i].question;
                         correctvariant=parseInt(data[i].correctvariant);
                         result += ' <form id="question'+i+'"><tr><td style="padding:5%"><label><strong>'+(i+1)+')'+question+'</strong></label></td> ';
-                        result +='<td><input type="radio" id="contactChoice1"name="question'+i+'" value="'+(1-correctvariant)+'">  да</br>';
+                        result +='<td><input type="radio" id="contactChoice1"name="question'+i+'" value="'+(1-correctvariant)+'" required>  да</br>';
                         result +='<input type="radio" id="contactChoice2" name="question'+i+'" value="'+(0+correctvariant)+'"> нет</td> </tr></form> ';
                     }
                     taskID=data[0]['id'];
