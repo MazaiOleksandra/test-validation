@@ -23,7 +23,7 @@
 ,Category from tQueueTasks
 where FinishDT is null 
 group by Category';
-    $conn =pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
+  $conn =pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
  dbname=d4veaugad1osfk user=wklzxhhlnzvaqs password=8486dd5267e33b69124f5e83d9773d5d6e56a3455a5011036a0238d2f3f3c11a");
     $result = pg_fetch_all(pg_query($conn, $query));
     pg_close($conn);
@@ -70,9 +70,12 @@ group by Category';
 </div>
 
 
-
 <div id="validationQueue" class="container-fluid">
+
+
     <div class="response_validation" id="main_table_pm"></div>
+
+
 </div>
 
 
@@ -80,15 +83,13 @@ group by Category';
 
 <div id="prof">
     <div class="container-fluid">
-        <?php
-        $query = "update tQueueTasks set startdt =null,finishdt = null,isvalid = null";
-        $conn =   $conn =pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
- dbname=d4veaugad1osfk user=wklzxhhlnzvaqs password=8486dd5267e33b69124f5e83d9773d5d6e56a3455a5011036a0238d2f3f3c11a");
-        $result = pg_fetch_all(pg_query($conn, $query));
-        pg_close($conn);?>
-        Все записи обновили,валидируйте заново
+        <button class="startBtn" id="clid_main_btn" onclick="delResult()">
+            Очистить статусы валидации
+        </button>
     </div>
-</div></div>
+    <div id="resDel"></div>
+</div>
+</div>
 
 <div id="statistic">
     <?php
@@ -99,7 +100,7 @@ group by Category';
         ,Category 
     from tQueueTasks
     group by Category";
-    $conn =   $conn =pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
+  $conn =pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
  dbname=d4veaugad1osfk user=wklzxhhlnzvaqs password=8486dd5267e33b69124f5e83d9773d5d6e56a3455a5011036a0238d2f3f3c11a");
     $result = pg_fetch_all(pg_query($conn, $query));
     pg_close($conn);
