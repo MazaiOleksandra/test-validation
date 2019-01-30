@@ -20,7 +20,7 @@ else {
 
 
     $queryQuestion = "select 
-coalesce(Question ,'aren\t question. foto valid?')as Question ,
+coalesce(Question ,'aren\'t question. foto valid?')as Question ,
 ID,
 Path2File,
 coalesce(CorrectVariant,'1') as CorrectVariant
@@ -28,9 +28,9 @@ coalesce(CorrectVariant,'1') as CorrectVariant
                                 ,Path2File
                                 ,Category
                               from tQueueTasks
-                              where StartDT is null
+                              where (StartDT is null or isvalid is null)
                               and Category='$type'
-                              order by CreateDT asc
+                              order by CreateDT,prior,startdt asc
                               LIMIT 1
     ) b on a.Category=b.Category";
 
