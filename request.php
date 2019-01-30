@@ -50,7 +50,7 @@ coalesce(CorrectVariant,'1') as CorrectVariant
         $currTask = $result[0]['id'];
         $queryUpdate = "update tQueueTasks set StartDT=now() where ID=$currTask";
         $resultUpdate = pg_fetch_all(pg_query($conn, $queryUpdate));
-
+sleep(1);
         //  var_dump($result);
     } else {
         $result = 0;
