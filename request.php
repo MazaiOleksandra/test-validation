@@ -30,7 +30,7 @@ coalesce(CorrectVariant,'1') as CorrectVariant
                               from tQueueTasks
                               where (StartDT is null or isvalid is null)
                               and Category='$type'
-                              order by CreateDT,prior,startdt asc
+                              order by CreateDT asc
                               LIMIT 1
     ) b on a.Category=b.Category";
 
