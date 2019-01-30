@@ -93,7 +93,8 @@ group by Category';
         ,Category 
     from tQueueTasks
     group by Category";
-    $conn = pg_connect("host=localhost dbname=mydb user=myuser password=123");
+    $conn =   $conn =pg_connect("host=ec2-23-21-171-25.compute-1.amazonaws.com
+ dbname=d4veaugad1osfk user=wklzxhhlnzvaqs password=8486dd5267e33b69124f5e83d9773d5d6e56a3455a5011036a0238d2f3f3c11a");
     $result = pg_fetch_all(pg_query($conn, $query));
     pg_close($conn);
 
