@@ -15,7 +15,7 @@ if ($type=='updateRes'){
 }
 else {
     $queryCnt = "select count(*) from tQueueTasks
-                              where StartDT is null or isvalid is null
+                              where (StartDT is null or isvalid is null)
                               and Category='$type'";
 
 
