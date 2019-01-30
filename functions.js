@@ -31,6 +31,7 @@ function Init(params) {
             $(this).tab('show');
             switch ($(this).attr('id')) {
                 case 'tab_main':
+                    location.reload();
                     $("#main_table").show();
                     $('#validationQueue').hide();
                     $('#prof').hide();
