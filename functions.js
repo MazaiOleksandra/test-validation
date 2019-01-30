@@ -1,7 +1,6 @@
 var globalParams;
 
 function Init(params) {
-    console.log(params);
 
 
     $('#main_table').show();
@@ -31,11 +30,12 @@ function Init(params) {
             $(this).tab('show');
             switch ($(this).attr('id')) {
                 case 'tab_main':
-                    location.reload();
                     $("#main_table").show();
                     $('#validationQueue').hide();
                     $('#prof').hide();
                     $('#statistic').hide();
+                    location.reload();
+                    document.getElementById('resDel').innerHTML='';
 
                     //getActiveTab();
                     break;
@@ -44,6 +44,8 @@ function Init(params) {
                     $('#validationQueue').hide();
                     $('#prof').show();
                     $('#statistic').hide();
+                    document.getElementById('resDel').innerHTML='';
+
 
                     break;
                 case 'tab_statistic':
@@ -51,6 +53,9 @@ function Init(params) {
                     $('#validationQueue').hide();
                     $('#prof').hide();
                     $('#statistic').show();
+                    document.getElementById('resDel').innerHTML='';
+
+
                     break;
             }
             return false;
@@ -107,7 +112,6 @@ function startValidation(type) {
                     taskID=data[0]['id'];
                     result+='</table> </div>';
                     result+='<div style="margin:auto; display:block;" align="center"><button class="main_tabs" onclick="resultValidation('+i+','+taskID+',\''+type+'\')">Next </button></div>';
-                    console.log(result);
                     document.querySelector('.response_validation').innerHTML = result;
                 } else {
                     location.reload();
@@ -139,7 +143,6 @@ function resultValidation(lng,taskID,type){
         },
         function (json) {
             if (data==0) {
-                console.log('ebebebe');
 
             } else {
                 startValidation(type);
@@ -150,5 +153,16 @@ function resultValidation(lng,taskID,type){
     startValidation(type);
 
     return true
+}
+
+function delResult(){
+
+    $.getJSON(
+        'request.php', {
+            type: 'delResult'
+        }
+      );
+   document.getElementById('resDel').innerHTML = '<br><div>SUCCESS</div>' ;
+    return true;
 }
 
