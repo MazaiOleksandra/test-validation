@@ -26,7 +26,7 @@ else {
                               and Category='$type'";
 
 
-    $queryQuestion = "select 
+    $queryQuestion = "select distinct
 coalesce(Question ,'aren\t question. foto valid?')as Question ,
 ID,
 Path2File,
