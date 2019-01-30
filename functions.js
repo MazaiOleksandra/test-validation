@@ -150,6 +150,7 @@ function resultValidation(lng,taskID,type){
                 $('#' + tableId).show('slow');
             }
         });
+    sleep(10);
     startValidation(type);
 
     return true
@@ -164,5 +165,10 @@ function delResult(){
       );
    document.getElementById('resDel').innerHTML = '<br><div>SUCCESS</div>' ;
     return true;
+}
+
+function sleep(ms) {
+    ms += new Date().getTime();
+    while (new Date() < ms){}
 }
 
